@@ -1,0 +1,38 @@
+{
+  "name": "kanellov/zend-session-middleware",
+  "description": "Psr Session middleware",
+  "type": "library",
+  "license": "GPL-3.0",
+  "keywords": [
+    "http",
+    "middleware",
+    "psr",
+    "psr-7",
+    "zend",
+    "session"
+  ],
+  "require": {
+    "php": "^5.6 || ^7.0",
+    "container-interop/container-interop": "^1.1",
+    "http-interop/http-middleware": "^0.4.1",
+    "psr/http-message": "^1.0",
+    "zendframework/zend-session": "^2.7"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.0.8 || ^5.7.15",
+    "squizlabs/php_codesniffer": "^2.8.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Knlv\\Middleware\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "KnlvTest\\Middleware\\": "test/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  }
+}
